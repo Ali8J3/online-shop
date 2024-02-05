@@ -5,28 +5,43 @@ export default function navbar(){
 
 
     return(  
-        <nav className="navbar">
-            {/* Left Navbar Start */}
-            <ul className="left-nav">
-            <img src="/images/Bearpaw-Logo-236.jpg" alt="" />
-                <li><a href="#">MEN</a></li>
-                <li><a href="#">WOMEN</a></li>
-                <li><a href="#">KIDS</a></li>
-                <li><a href="#">SALE</a></li>
-                <li><a href="#">GIFT CARDS</a></li>
-                <li><a href="#">BEARPAW CARES</a></li>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <div className="container-fluid">
+                <a className="navbar-brand" href="#">
+                    <img src="../assets/Bearpaw-Logo-236.jpg" alt="Logo" />
+                </a>
+            </div>
+            {/* eft navbar items 👇*/}
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" role="button" >WOMAN</a>
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" role="button" >MAN</a>
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" role="button" >KIDS</a>
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" role="button" >SALE</a>
+                </li>                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" role="button" >GIFT CARDS</a>
+                </li>                <li className="nav-item dropdown">
+                    <a className="nav-link" href="#">BEARPAW CARES</a>
+                </li>
             </ul>
-            {/* Left Navbar End */}
-
-
-            {/* Right Navbar Start */}
-            <ul className="right-nav">
-                <li className="nav-search"><input placeholder=" Search" type="search"/></li>
-                <li> <i class="medium material-icons">account_circle</i> </li>
-                <li> <i class="medium material-icons">favorite_border</i> </li>
-                <li> <i class="medium material-icons">shop</i> </li>
+            <form className="d-flex" role="search">
+                {/* replace the btn with a  logo like BP 👇*/}
+                <button className="btn" type="submit"></button>
+                <input className="form-control me-2" type="search" placeholder="Search" />
+            </form>
+            {/* right navbar items👇 */}
+            <ul>
+                <li className="nav-item"><i class="bi bi-person-circle"></i></li>
+                <li className="nav-item"><i class="bi bi-heart-fill"></i></li>
+                {/* add a number icon to this logo like the BP 👇 */}
+                <li className="nav-item"><i class="bi bi-bag-fill"></i></li>
             </ul>
-            {/* Right Navbar End */}
         </nav>
      
      
