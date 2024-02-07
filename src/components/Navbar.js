@@ -1,4 +1,5 @@
 import React from "react"
+import DropDownCard from "./DropDownCard.js"
 
 export default function navbar(){
 
@@ -11,8 +12,8 @@ export default function navbar(){
                     <img src="../assets/Bearpaw-Logo-236.jpg" alt="Logo" />
                 </a>
             </div>
-            {/* eft navbar items 👇*/}
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            {/* left navbar items 👇*/}
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 me-2">
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" >WOMAN</a>
                 </li>
@@ -31,16 +32,16 @@ export default function navbar(){
                 </li>
             </ul>
             <form className="d-flex" role="search">
-                {/* replace the btn with a  logo like BP 👇*/}
                 <button className="btn" type="submit"></button>
                 <input className="form-control me-2" type="search" placeholder="Search" />
             </form>
             {/* right navbar items👇 */}
-            <ul>
-                <li className="nav-item"><i class="bi bi-person-circle"></i></li>
-                <li className="nav-item"><i class="bi bi-heart-fill"></i></li>
+            {/* +++++ make the icons look bigger */}
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 mr-5">
+                <li className="nav-item"><a className="nav-link me-3 me-lg-0" href="#"><i class=" bi bi-person-circle"></i></a> </li>
+                <li className="nav-item"><a className="nav-link me-3 me-lg-0" href="#"><i class=" bi bi-heart-fill"></i></a> </li>
                 {/* add a number icon to this logo like the BP 👇 */}
-                <li className="nav-item"><i class="bi bi-bag-fill"></i></li>
+                <li className="nav-item"><a className="nav-link me-3 me-lg-0" href="#"><i class=" bi bi-bag-fill"></i></a> </li>
             </ul>
         </nav>
      
