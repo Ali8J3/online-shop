@@ -1,15 +1,12 @@
 import React from "react"
-import DropDownCard from "./DropDownCard.js"
 
 export default function navbar(){
-
-
 
     return(  
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                    <img src="../assets/Bearpaw-Logo-236.jpg" alt="Logo" />
+                    <img src="../../public/images/Bearpaw-Logo.jpg" alt="Logo" />
                 </a>
             </div>
             {/* left navbar items 👇*/}
@@ -17,19 +14,35 @@ export default function navbar(){
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" >WOMAN</a>
                 </li>
+                <ul className="dropdown-menu">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" >MAN</a>
                 </li>
+
+
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" >KIDS</a>
                 </li>
+
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" >SALE</a>
-                </li>                <li className="nav-item dropdown">
+                </li>   
+                
+                             <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" >GIFT CARDS</a>
-                </li>                <li className="nav-item dropdown">
+                </li>     
+                
+                           <li className="nav-item dropdown">
                     <a className="nav-link" href="#">BEARPAW CARES</a>
                 </li>
+
+
             </ul>
             <form className="d-flex" role="search">
                 <button className="btn" type="submit"></button>
