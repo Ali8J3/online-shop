@@ -1,4 +1,4 @@
-# This repository is going to be an Online Shop web application.
-## The idea is to make this web app with React and crude CSS, and after I get a hold of Bootstrap or Tailwind... I will update the styles✨; 
-## Of course, it is not complete now but I promised myself to finish it by March 19th, 2024 🤞.
+# This repository will be an Online Shop web application.
+## The idea is to make a web app with ReactJS and CSS libraries like Bootstrap and...✨; 
+## I know, it is not complete yet but I'm working on it 🤞
 ### If you have any comments, check my GitHub bio... ❤️
